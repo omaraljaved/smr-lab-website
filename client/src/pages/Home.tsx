@@ -244,7 +244,7 @@ const TEAM_MEMBERS = [
     email: "asenanayaka@tntech.edu",
     bio: "Dr. Senanayaka's research focuses on smart manufacturing, predictive maintenance, additive manufacturing, and machine learning. He holds a Ph.D. and has published in top journals including IJAMT and JMSE. Before joining TTU, he was a Postdoctoral Associate at the Center for Advanced Vehicular Systems, Mississippi State University.",
     tags: ["Smart Manufacturing", "Predictive Maintenance", "ML"],
-    photo: "/manus-storage/dr-senanayaka-headshot_54e51905.jpg",
+    photo: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663301075415/maieRBsufHpjNXhH.jpg",
     isPI: true,
     links: {
       scholar: "https://scholar.google.com/citations?user=GBPas3kAAAAJ&hl=en",
@@ -260,7 +260,7 @@ const TEAM_MEMBERS = [
     email: "mjaved42@tntech.edu",
     bio: "Research focus on multichannel acoustic feature fusion for predictive maintenance in high-speed robotic manufacturing systems. Co-author of the MCAFF paper presented at IEOM 2026. Interested in acoustic signal processing, deep learning, and industrial robotics.",
     tags: ["Acoustic Sensing", "Robotics", "CNN"],
-    photo: "/manus-storage/javed-headshot_3edd4a06.jpg",
+    photo: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663301075415/nsYSkhOxwzdWXnAi.jpg",
     isPI: false,
     links: {},
   },
