@@ -822,10 +822,6 @@ function TeamSection() {
               <p className="text-xs text-muted-foreground mb-4">{member.dept}</p>
               <p className="text-sm text-muted-foreground leading-relaxed mb-5">{member.bio}</p>
 
-              <div className="flex flex-wrap gap-2 mb-5">
-                {member.tags.map((tag) => <span key={tag} className="tag-muted">{tag}</span>)}
-              </div>
-
               <div className="flex flex-col gap-2">
                 <a href={`mailto:${member.email}`} className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors">
                   <Mail className="w-4 h-4" /> {member.email}
