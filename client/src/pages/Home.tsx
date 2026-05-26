@@ -840,11 +840,7 @@ function TeamSection() {
                     <ExternalLink className="w-4 h-4" /> LinkedIn
                   </a>
                 )}
-                {member.links.researchgate && (
-                  <a href={member.links.researchgate} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors">
-                    <ExternalLink className="w-4 h-4" /> ResearchGate
-                  </a>
-                )}
+
               </div>
             </div>
           ))}
