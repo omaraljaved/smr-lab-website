@@ -255,11 +255,23 @@ const TEAM_MEMBERS = [
   {
     name: "Md Omar Al Javed",
     role: "Graduate Researcher",
-    title: "M.S. Student",
-    dept: "Mechanical and Nuclear Engineering",
+    title: "Ph.D. Student",
+    dept: "Mechanical Engineering",
     email: "mjaved42@tntech.edu",
     bio: "Research focus on multichannel acoustic feature fusion for predictive maintenance in high-speed robotic manufacturing systems. Co-author of the MCAFF paper presented at IEOM 2026. Interested in acoustic signal processing, deep learning, and industrial robotics.",
     tags: ["Acoustic Sensing", "Robotics", "CNN"],
+    photo: null,
+    isPI: false,
+    links: {},
+  },
+  {
+    name: "Matthew Taylor",
+    role: "Undergraduate Researcher",
+    title: "B.S. Student",
+    dept: "Manufacturing and Engineering Technology",
+    email: "",
+    bio: "Undergraduate researcher contributing to smart manufacturing and robotics projects in the SMR Lab. Gaining hands-on experience in manufacturing processes, sensor integration, and experimental research methodologies.",
+    tags: ["Smart Manufacturing", "Robotics", "Manufacturing Technology"],
     photo: null,
     isPI: false,
     links: {},
@@ -270,7 +282,7 @@ const STATS = [
   { value: "13+", label: "Publications", icon: BookOpen },
   { value: "99+", label: "Citations", icon: Award },
   { value: "4", label: "Research Areas", icon: FlaskConical },
-  { value: "2+", label: "Lab Members", icon: Users },
+  { value: "3+", label: "Lab Members", icon: Users },
 ];
 
 // ─── Components ──────────────────────────────────────────────────────────────
