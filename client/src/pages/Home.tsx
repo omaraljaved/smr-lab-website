@@ -248,7 +248,6 @@ const TEAM_MEMBERS = [
     isPI: true,
     links: {
       scholar: "https://scholar.google.com/citations?user=GBPas3kAAAAJ&hl=en",
-      researchgate: "https://www.researchgate.net/profile/Ayantha-Senanayaka",
       linkedin: "https://www.linkedin.com/in/ayantha-senanayaka-3080a2269/",
     },
   },
@@ -816,10 +815,10 @@ function TeamSection() {
                 )}
               </div>
 
-              {member.isPI && <span className="tag-cyan mb-3 inline-block">Principal Investigator</span>}
+              <span className="tag-cyan mb-3 inline-block">{member.role}</span>
 
               <h3 className="font-display text-xl font-bold text-foreground mb-1">{member.name}</h3>
-              <p className="text-sm text-primary font-medium mb-1">{member.isPI ? member.title : `${member.role} — ${member.title}`}</p>
+              <p className="text-sm text-primary font-medium mb-1">{member.title}</p>
               <p className="text-xs text-muted-foreground mb-4">{member.dept}</p>
               <p className="text-sm text-muted-foreground leading-relaxed mb-5">{member.bio}</p>
 
