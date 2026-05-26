@@ -249,7 +249,7 @@ const TEAM_MEMBERS = [
     links: {
       scholar: "https://scholar.google.com/citations?user=GBPas3kAAAAJ&hl=en",
       researchgate: "https://www.researchgate.net/profile/Ayantha-Senanayaka",
-      profile: "https://www.tntech.edu/directory/engineering/faculty/ayantha-senanayaka.php",
+      linkedin: "https://www.linkedin.com/in/ayantha-senanayaka-3080a2269/",
     },
   },
   {
@@ -262,7 +262,10 @@ const TEAM_MEMBERS = [
     tags: ["Acoustic Sensing", "Robotics", "CNN"],
     photo: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663301075415/nsYSkhOxwzdWXnAi.jpg",
     isPI: false,
-    links: {},
+    links: {
+      scholar: "https://scholar.google.com/citations?user=AADnnxMAAAAJ&hl=en",
+      linkedin: "https://www.linkedin.com/in/omar-al-javed/",
+    },
   },
   {
     name: "Matthew Taylor",
@@ -816,7 +819,7 @@ function TeamSection() {
               {member.isPI && <span className="tag-cyan mb-3 inline-block">Principal Investigator</span>}
 
               <h3 className="font-display text-xl font-bold text-foreground mb-1">{member.name}</h3>
-              <p className="text-sm text-primary font-medium mb-1">{member.role} — {member.title}</p>
+              <p className="text-sm text-primary font-medium mb-1">{member.isPI ? member.title : `${member.role} — ${member.title}`}</p>
               <p className="text-xs text-muted-foreground mb-4">{member.dept}</p>
               <p className="text-sm text-muted-foreground leading-relaxed mb-5">{member.bio}</p>
 
@@ -833,9 +836,14 @@ function TeamSection() {
                     <BookOpen className="w-4 h-4" /> Google Scholar
                   </a>
                 )}
-                {member.links.profile && (
-                  <a href={member.links.profile} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors">
-                    <ExternalLink className="w-4 h-4" /> TTU Faculty Profile
+                {member.links.linkedin && (
+                  <a href={member.links.linkedin} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors">
+                    <ExternalLink className="w-4 h-4" /> LinkedIn
+                  </a>
+                )}
+                {member.links.researchgate && (
+                  <a href={member.links.researchgate} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors">
+                    <ExternalLink className="w-4 h-4" /> ResearchGate
                   </a>
                 )}
               </div>
