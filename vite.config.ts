@@ -205,7 +205,13 @@ function vitePluginStorageProxy(): Plugin {
 
 const plugins = [react(), tailwindcss(), jsxLocPlugin(), vitePluginManusRuntime(), vitePluginManusDebugCollector(), vitePluginStorageProxy()];
 
+// For GitHub Pages deployment: set base to repo name when building for GH Pages
+// The GITHUB_PAGES env variable is set in the GitHub Actions workflow
+const isGitHubPages = process.env.GITHUB_PAGES === 'true';
+const repoName = process.env.REPO_NAME || 'smr-lab-website';
+
 export default defineConfig({
+  base: isGitHubPages ? `/${repoName}/` : '/',
   plugins,
   resolve: {
     alias: {
